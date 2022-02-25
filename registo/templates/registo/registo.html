@@ -1,0 +1,9 @@
+<form action="{% url 'registo' %}" method="post">
+    {% csrf_token %}
+
+        {{form.as_p}}
+
+        {{form.formFilhos}}
+
+    <input type="submit" value="Submeter">
+    </form>
